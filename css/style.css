@@ -510,36 +510,36 @@ section {
     }
 
     button {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     #html, #css, #php{
-        width: 60px;
-        height: 25px;
+        width: 80px;
+        height: 30px;
     }
 
     #python {
-        width: 70px;
-        height: 25px;
+        width: 90px;
+        height: 30px;
     }
 
     #js {
-        width: 100px;
-        height: 25px;
+        width: 120px;
+        height: 30px;
     }
 
 
     #html img, #css img, #python img, #js img {
-        width: 10px;
-    }
-
-    #php img {
         width: 15px;
     }
 
+    #php img {
+        width: 20px;
+    }
+
     #juego button {
-        width: 90px;
-        height: 25px;
+        width: 130px;
+        height: 30px;
     }
 
     .proyecto a{
@@ -547,8 +547,8 @@ section {
         margin-top: -7.7%;
         background-color: rgb(16, 16, 16);
         display:none; 
-        width: 10%;
-        height: 20px;
+        width: 15%;
+        height: 30px;
         text-align: center;
         color: rgb(231, 231, 231);
     }
@@ -581,7 +581,7 @@ section {
 
     #sobre-mi img {
         margin-left: 30%;
-        width: 150px;
+        width: 170px;
     }
 
     #container-mobile {
@@ -596,8 +596,8 @@ section {
         background-color: rgba(106, 186, 211, 0.1); 
         transform-origin: center;
         transform: translate(-50%, -50%) translateX(250px);
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         background-size: 50%;
         background-position-x: center;
