@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Kode+Mono:wght@400..700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header-transparente">
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Tecnologias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h1>Sobre mi</h1>
+            <img src="images/me.png" width="200px">
+            <span>Hola, soy Adrian, un entusiasta de la tecnologia que siempre esta en busca de nuevos conociminetos. En la mayoría de los proyectos en los que he participado, me he desempeñado en el rol de desarrollador back-end.</span><br>
+        </section>
+        <section id="proyectos">
+            <h1>Proyectos</h1>
+
+            <div class="proyecto">
+                <h3>Aplicacion Web: Takosuanime</h3>
+                <p style="padding-top: 5px; padding-bottom: 5px;">Takosuanime es una plataforma web diseñada para ofrecer a los usuarios una experiencia integrada de lectura de manga y visualización de anime sin la necesidad de navegar entre diferentes sitios.En este proyecto desempeñé el rol de desarrollador Back-End.</p>
+                <button id="html"><img src="images/html.png" width="20px"><span>HTML</span></button><button id="css"><img src="images/css.png" width="20px"><span>CSS</span></button><button id="php"><img src="images/php.png" width="30px"><span>PHP</span></button>
+                <img src="images/takosuanime.png" width="90%"><a href="https://takosuanime.000webhostapp.com/takosuanime/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                  </svg></a>
+            </div>
+
+            <div class="proyecto">
+                <h3>Asistente de Voz</h3>
+                <p>El proyecto consiste en un asistente de voz desarrollado en Python, diseñado para facilitar la productividad y la asistencia personal. Utiliza tecnologías de voz a texto para interpretar comandos verbales y ejecutar una variedad de tareas automatizadas, mejorando la eficiencia en la gestión de información.</p>
+                <button id="python"><img src="images/python.webp" width="20px"><span>Python</span></button><br>
+                <a id="asistente" href="https://github.com/D4RKL10N3823/Asistente-de-Voz" target="_blank">Asistente</a>
+            </div>
+
+            <div class="proyecto">
+                <h3>Juego VS Computadora</h3>
+                <p>Este proyecto es un juego interactivo de navegador inspirado en la franquicia de Pokémon, el juego permite a los usuarios sumergirse en duelos estratégicos donde eligen entre tres Pokenes iniciales: cada uno representa los elementos clásicos de fuego, agua y planta. Implementado con HTML, CSS y JavaScript, el juego presenta una interfaz dinámica que responde a las elecciones del usuario y simula combates por turnos contra un oponente controlado por la computadora.</p>
+                <button id="html"><img src="images/html.png" width="20px"><span>HTML</span></button><button id="css"><img src="images/css.png" width="20px"><span>CSS</span></button><button id="js"><img src="images/js.png" width="20px"><span>JavaScript</span></button>
+                <h4 id="titulo" style="text-align: center;">Pokemon!</h4>
+                <div id="juego">
+                    <section id ="Seleccionar-Pokemon">
+                        <h4>Elige a tu Pokemon:</h4>
+
+                        <input type="radio" name="Pokemon" id="bulbasaur" />
+                        <label for="bulbasaur"><img src="images/bulbasaur.png" width="10%px"></label>
+                        
+                        <input type="radio" name="Pokemon" id="squitle" />
+                        <label for="squitle"><img src="images/squitle.png" width="10%"></label>
+
+                        <input type="radio" name="Pokemon" id="charmander" />
+                        <label for="charmander"><img src="images/charmander.png" width="10%"></label>
+
+                        <button id="boton-pokemon">Seleccionar</button>
+                    </section>
+
+                    <section id ="Seleccionar-Ataque">
+                        <h4>Elige tu ataque:</h4>
+
+                        <p>Tu <span id="pokemon-jugador">Pokemon</span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                        <p>El <span id="pokemon-npc">Pokemon</span> del enemigo tiene <span id="vidas-npc">3</span> vidas</p>
+
+                        <p>
+                            <button id="boton-fuego" style="background-color: #f8770a;">Fuego 🔥</button>
+                            <button id="boton-agua" style="background-color: #00bcf2;">Agua 💧</button>
+                            <button id="boton-planta" style="background-color: #aed10d;">Planta 🌱</button>
+                        </p>
+                    </section>
+
+                    <section id ="Mensajes">
+                    </section>
+
+                    <section id ="Reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h1><i class="bi bi-code-slash"></i> Tecnologias</h1>
+            <div id="container" style="position: relative; width: 500px; height: 500px; margin-left: 27%;margin-top: 5%;">
+                <img id="astronauta" src="images/astronauta.png" width="500px">
+                <button class="orbit-button" style="background-image: url('images/html.png');""></button>
+                <button class="orbit-button" style="background-image: url('images/css.png');"></button>
+                <button class="orbit-button" style="background-image: url('images/js.png');"></button>
+                <button class="orbit-button" style="background-image: url('images/php.png');"></button>
+                <button class="orbit-button" style="background-image: url('images/python.webp');"></button>
+                <button class="orbit-button" style="background-image: url('images/flask.png');"></button>
+                <button class="orbit-button" style="background-image: url('images/sql.png');"></button>
+                <button class="orbit-button" style="background-image: url('images/mongo.png'); background-size: 70%;"></button>
+                <button class="orbit-button" style="background-image: url('images/github.png'); background-size: 90%;"></button>
+                <button class="orbit-button" style="background-image: url('images/linux.png');"></button>
+            </div>
+            <div id="container-mobile">
+                <button class="boton-movil" style="background-image: url('images/html.png');""></button>
+                <button class="boton-movil" style="background-image: url('images/css.png');"></button>
+                <button class="boton-movil" style="background-image: url('images/js.png');"></button>
+                <button class="boton-movil" style="background-image: url('images/php.png');"></button>
+                <button class="boton-movil" style="background-image: url('images/python.webp');"></button>
+                <button class="boton-movil" style="background-image: url('images/flask.png');"></button>
+                <button class="boton-movil" style="background-image: url('images/sql.png');"></button>
+                <button class="boton-movil" style="background-image: url('images/mongo.png'); background-size: 70%;"></button>
+                <button class="boton-movil" style="background-image: url('images/github.png'); background-size: 90%;"></button>
+                <button class="boton-movil" style="background-image: url('images/linux.png');"></button>
+            </div>
+            
+                     
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/pokemon.js"></script>
+</body>
+</html>
