@@ -312,14 +312,14 @@ section {
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
     main {
         margin-left: 7%;
         margin-right: 7%;
     }
 
     header {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .nav {
