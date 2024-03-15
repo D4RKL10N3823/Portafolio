@@ -41,6 +41,14 @@ header {
     color: white
 }
 
+.nav-list button {
+    width: 30px;
+    height: 30px;
+    background:none;
+    margin-top: -5%; 
+    margin-right: 2%;
+}
+
 .abrir-menu,
 .cerrar-menu {
     display: none;
@@ -49,6 +57,10 @@ header {
     background-color: transparent;
     cursor: pointer;
     color: white;
+}
+
+#light-mode {
+    display: none;
 }
 
 body {

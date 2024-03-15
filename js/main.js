@@ -10,10 +10,32 @@ cerrar.addEventListener('click', () => {
     nav.classList.remove("nav-visible");
 })
 
-function Asistente() {
-    var exec = require('child_process').exec;
-    exec('python tu_script.py', function(error, stdout, stderr) {
-        // Aquí puedes manejar la respuesta de tu script, por ejemplo:
-        console.log(stdout);
-    });
+
+const darkMode = document.querySelector("#dark-mode");
+const lightMode = document.querySelector("#light-mode");
+const body = document.querySelector("#body")
+
+function darkModeActivo() {
+    body.style.background = '#282928';
+    body.style.color = 'white';
+    darkMode.style.display = 'none';
+    lightMode.style.display = 'block';
+    localStorage.setItem('darkMode', 'activo');
+};
+
+function lightModeActivo() {
+    body.style.background = 'white';
+    body.style.color = 'black';
+    lightMode.style.display = 'none';
+    darkMode.style.display = 'block';
+    localStorage.setItem('darkMode', 'desactivo');
+};
+
+darkMode.addEventListener('click', darkModeActivo);
+lightMode.addEventListener('click', lightModeActivo);
+
+if(localStorage.getItem('darkMode') === 'activo') {
+    darkModeActivo();
+} else {
+    lightModeActivo();
 }
