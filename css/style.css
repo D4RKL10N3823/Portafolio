@@ -317,9 +317,144 @@ section {
         margin-left: 7%;
         margin-right: 7%;
     }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top:0;
+        right:0;
+        padding: 2rem;
+        background-color: rgba(11, 112, 146, 0.95);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        text-align: end;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    #html, #css, #php{
+        width: 60px;
+        height: 25px;
+    }
+
+    #python {
+        width: 70px;
+        height: 25px;
+    }
+
+    #js {
+        width: 100px;
+        height: 25px;
+    }
+
+
+    #html img, #css img, #python img, #js img {
+        width: 10px;
+    }
+
+    #php img {
+        width: 15px;
+    }
+
+    #juego button {
+        width: 90px;
+        height: 25px;
+    }
+
+    .proyecto a{
+        margin-left: 85.3%;
+        margin-top: -7.7%;
+        background-color: rgb(16, 16, 16);
+        display:none; 
+        width: 10%;
+        height: 20px;
+        text-align: center;
+        color: rgb(231, 231, 231);
+    }
+
+    .proyecto a svg {
+        width: 12px;
+        margin-top: -100%;
+    }
+
+    #asistente {
+        width: 80px;
+        margin-left: 40%;
+        color: black;
+        height: 20px;
+        font-size: 12px;
+        align-items: center;
+        text-align: center;
+        padding-top: 0; 
+    }
+    
+    #container {
+        display: none;
+    }
+
+    #sobre-mi span {
+        margin-left: 0;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    #sobre-mi img {
+        margin-left: 40%;
+        width: 150px;
+    }
+
+    #container-mobile {
+        display: block;
+        margin-left: -30%;
+        width: 100%; 
+        height: 200px;
+        margin-top: 10%;
+    }
+
+    .boton-movil {
+        background-color: rgba(106, 186, 211, 0.1); 
+        transform-origin: center;
+        transform: translate(-50%, -50%) translateX(250px);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-size: 50%;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-left: 1%;
+        margin-top: 5%;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 20px;
     }
