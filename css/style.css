@@ -59,7 +59,7 @@ header {
     color: white;
 }
 
-#light-mode {
+#modo-claro {
     display: none;
 }
 
@@ -110,6 +110,10 @@ button, #asistente {
     margin-left: 17%;
     border-radius: 50%;
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
 }
 
 #sobre-mi span{
@@ -264,7 +268,6 @@ section {
     animation: girar-alrededor 30s linear infinite;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(4px); 
 }
 
 
